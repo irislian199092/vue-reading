@@ -13,11 +13,15 @@ module.exports = {
     contentBase: "./dist"
   },
   plugins: [
-    // new CleanWebpackPlugin(['dist/*']) for < v2 versions of CleanWebpackPlugin
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "src/index.html",
       title: "Development"
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      vue: "vue/dist/vue.esm.js"
+    }
+  }
 }

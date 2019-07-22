@@ -1,11 +1,13 @@
 {
-  "name": "vue",
+  "name": "vue-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --open"
+    "dev": "webpack-dev-server --open",
+    "build": "webpack",
+    "serve": "babel index.js --out-dir dist"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +20,7 @@
   },
   "dependencies": {
     "clean-webpack-plugin": "^3.0.0",
-    "html-webpack-plugin": "^3.2.0"
+    "html-webpack-plugin": "^3.2.0",
+    "vue": "^2.6.10"
   }
 }
